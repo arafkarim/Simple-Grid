@@ -1,0 +1,49 @@
+.container{
+	display: flex;
+}
+.col-1, .col-4of4{
+	margin: 0 5px;
+	flex-basis: 100%;
+}
+.col-1of2, .col-2of4{
+	margin: 0 5px;
+	flex-basis: 50%;
+}
+.col-1of3{
+	margin: 0 5px;
+	flex-basis: 33.3333333333%;
+}
+.col-1of4{
+	margin: 0 5px;
+	flex-basis: 25%;
+}
+.col-3of4{
+	margin: 0 5px;
+	flex-basis: 75%;
+}
+
+/* OFFSET */
+.col-offset-1of2{
+	margin: 0 5px 0 50%;
+}
+.col-offset-1of3{
+	margin: 0 5px 0 33.3333333333%;
+}
+.col-offset-1of4{
+	margin: 0 5px 0 25%;
+}
+.col-offset-3of4{
+	margin: 0 5px 0 75%;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px){
+	.container{
+		display: block;
+	}
+	.col-offset-1of2,.col-offset-1of3,
+	.col-offset-1of4,.col-offset-3of4{
+		margin: 0 5px;
+	}
+}
